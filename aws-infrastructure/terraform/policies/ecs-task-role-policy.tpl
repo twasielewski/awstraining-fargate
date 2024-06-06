@@ -39,7 +39,21 @@ ${jsonencode(
         "sns:Publish"
       ],
       "Resource": "*"
-    }
+    },
+    {
+      "Action": [
+        "translate:TranslateText"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Action": [
+        "comprehend:DetectSentiment"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
   ]
 }
 )
